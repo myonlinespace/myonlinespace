@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Use</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .header {
+            position: relative;
+            background-image: url('time.png');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+            z-index: 1;
+        }
+
+        .header h1 {
+            position: relative;
+            z-index: 2;
+            font-size: 48px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .full-page-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .full-page-image img {
+            max-width: 80%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Time Use</h1>
+    </div>
+    <div class="content">
+        <h2>Subtitle Goes Here</h2>
+        <p>
+            This is the body text. It provides information about time use, discussing how people spend their time
+            and the importance of understanding these patterns in our daily lives.
+        </p>
+    </div>
+    <div class="full-page-image">
+        <img src="Chart1.png" alt="Full page visual"> <!-- Replace with your image path -->
+    </div>
+</body>
+</html>
